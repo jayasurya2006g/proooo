@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-ink-950 text-paper-100;
+  }
+  body {
+    @apply font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  ::selection {
+    @apply bg-signal-teal/30;
+  }
+}
+
+@layer utilities {
+  .bg-node-field {
+    background-image: radial-gradient(circle at 1px 1px, rgba(183,192,218,0.10) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+}
